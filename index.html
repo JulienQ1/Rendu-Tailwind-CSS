@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="styles/style.css">
+            <link rel="icon" href="images/favicon-32x32.png">
+
+            <title>Rendu Tailwind CSS</title>
+           
+        </head>
+
+    <body>
+
+        <header
+        class="bg-[url('./images/mobile/image-header.jpg')] bg-no-repeat bg-center bg-cover lg:bg-[url('./images/desktop/image-header.jpg')] lg:min-h-screen lg:py-6"
+      >
+        <nav
+          class="relative w-[87%] mx-auto flex gap-5 justify-between items-center py-8 lg:w-[90%]"
+        >
+          <a href="/index.html"
+            ><img class="md:w-48" src="./images/logo.svg" alt="logo"
+          /></a>
+          <div id="icon-menu" class="hover:cursor-pointer lg:hidden">
+            <img src="./images/icon-hamburger.svg" alt="" aria-hidden="true" />
+          </div>
+          <div
+            id="triangle"
+            class="absolute top-20 right-0 w-7 h-7 hidden [background:linear-gradient(to_bottom_right,_transparent_0%,_transparent_50%,_#fff_50%,_#fff_100%)] lg:hidden"
+          ></div>
+          <div
+            id="nav-links"
+            class="absolute bg-neutral-100 w-full top-[6.5rem] py-9 flex flex-col items-center gap-6 text-neutral-300 text-lg font-semibold hidden lg:[position:inherit] lg:bg-transparent lg:flex lg:flex-row lg:gap-16 lg:top-0 lg:p-0 lg:w-max lg:text-neutral-100"
+          >
+            <a class="hover:text-neutral-500 hover:underline" href="#">About</a>
+            <a class="hover:text-neutral-500 hover:underline" href="#"
+              >Services</a
+            >
+            <a class="hover:text-neutral-500 hover:underline" href="#"
+              >Projects</a
+            >
+            <a
+              class="text-black font-serif uppercase bg-primary-yellow rounded-full py-3 px-8 lg:py-4 lg:bg-neutral-100 lg:hover:bg-opacity-30 lg:hover:text-neutral-100"
+              href="#"
+              >Contact</a
+            >
+          </div>
+        </nav>
+        <section
+          class="w-[87%] mx-auto pt-8 pb-[6rem] flex flex-col gap-10 items-center lg:w-[90%] lg:pt-20 lg:gap-28"
+        >
+          <h1
+            class="uppercase tracking-[0.2em] leading-tight text-center text-white text-[2.5rem] font-serif font-black lg:text-6xl"
+          >
+            We are creatives
+          </h1>
+          <a href="#transform-brand"
+            ><img src="./images/icon-arrow-down.svg" alt="big arrow to go down"
+          /></a>
+        </section>
+      </header>
+      <section id="#transform-brand" class="lg:flex lg:flex-row-reverse">
+        <div
+          class="min-h-[50vh] w-full lg:h-auto bg-[url('./images/mobile/image-transform.jpg')] bg-no-repeat bg-center bg-cover lg:bg-[url('./images/desktop/image-transform.jpg')]"
+        ></div>
+        <article
+          class="grid gap-8 place-items-center w-[87%] mx-auto py-16 text-center lg:text-left lg:max-w-[50%] lg:m-0 lg:p-40 lg:pr-28"
+        >
+          <h2 class="text-4xl text-neutral-500 font-serif lg:text-5xl">
+            Transform your brand
+          </h2>
+          <p class="text-lg text-neutral-300">
+            We are a full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
+          </p>
+          <a
+            class="w-max relative text-neutral-500 uppercase font-serif font-bold tracking-widest after:w-[105%] after:mx-auto after:content-[''] after:-z-10 after:absolute after:inset-0 after:top-[0.95rem] after:rounded-full after:h-2.5 after:bg-primary-yellow after:opacity-50 after:hover:opacity-100 lg:mr-auto"
+            href="#"
+            >Learn more</a
+          >
+        </article>
+      </section>
+      <section class="lg:flex">
+        <div
+          class="w-full min-h-[50vh] lg:h-auto bg-[url('./images/mobile/image-stand-out.jpg')] bg-no-repeat bg-center bg-cover lg:bg-[url('./images/desktop/image-stand-out.jpg')]"
+        ></div>
+        <article
+          class="grid gap-8 place-items-center w-[87%] mx-auto py-16 text-center lg:text-left lg:max-w-[50%] lg:m-0 lg:p-40 lg:pl-28"
+        >
+          <h2 class="text-4xl text-neutral-500 font-serif lg:text-5xl">
+            Stand out to the right audience
+          </h2>
+          <p class="text-lg text-neutral-300">
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we’ll build and
+            extend your brand in digital places.
+          </p>
+          <a
+            class="w-max relative text-neutral-500 uppercase font-serif font-bold tracking-widest after:w-[105%] after:mx-auto after:content-[''] after:-z-10 after:absolute after:inset-0 after:top-[0.95rem] after:rounded-full after:h-2.5 after:bg-primary-red after:opacity-50 after:hover:opacity-100 lg:mr-auto"
+            href="#"
+            >Learn more</a
+          >
+        </article>
+      </section>
+      <section class="lg:flex">
+        <article
+          class="bg-[url('./images/mobile/image-graphic-design.jpg')] bg-no-repeat bg-cover lg:max-w-[50%] lg:bg-[url('./images/desktop/image-graphic-design.jpg')]"
+        >
+          <article
+            class="w-[87%] mx-auto text-center pt-96 pb-16 grid gap-6 lg:px-36"
+          >
+            <h2
+              class="font-serif font-black text-[1.75rem] text-primary-design-text-cyan"
+            >
+              Graphic design
+            </h2>
+            <p class="text-primary-design-text-cyan leading-relaxed lg:text-lg">
+              Great design makes you memorable. We deliver artwork that
+              underscores your brand message and captures potential clients’
+              attention.
+            </p>
+          </article>
+        </article>
+        <article
+          class="bg-[url('./images/mobile/image-photography.jpg')] bg-no-repeat bg-cover lg:bg-[url('./images/desktop/image-photography.jpg')]"
+        >
+          <article
+            class="w-[87%] mx-auto text-center pt-96 pb-16 grid gap-6 lg:px-36"
+          >
+            <h2
+              class="font-serif font-black text-[1.75rem] text-primary-photo-text-blue"
+            >
+              Photography
+            </h2>
+            <p class="text-primary-photo-text-blue leading-relaxed lg:text-lg">
+              Increase your credibility by getting the most stunning,
+              high-quality photos that improve your business image.
+            </p>
+          </article>
+        </article>
+      </section>
+      <section
+        class="flex flex-col gap-12 text-center py-16 lg:gap-16 lg:py-36 lg:px-40"
+      >
+        <h2
+          class="uppercase font-serif font-black text-neutral-200 tracking-[0.25em] md:text-xl"
+        >
+          Client testimonials
+        </h2>
+        <div class="flex flex-col gap-12 lg:gap-14 lg:flex-row">
+          <article
+            class="w-[87%] mx-auto flex flex-col gap-16 justify-center items-center text-lg"
+          >
+            <img
+              class="w-20 h-20 rounded-full"
+              src="./images/image-emily.jpg"
+              alt=""
+            />
+            <p class="text-neutral-400 leading-8">
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </p>
+            <div class="flex flex-col gap-1">
+              <p class="font-serif font-black">Emily R.</p>
+              <p class="text-[0.95rem] text-neutral-300">Marketing Director</p>
+            </div>
+          </article>
+          <article
+            class="w-[87%] mx-auto flex flex-col gap-16 justify-center items-center text-lg"
+          >
+            <img
+              class="w-20 h-20 rounded-full"
+              src="./images/image-thomas.jpg"
+              alt=""
+            />
+            <p class="text-neutral-400 leading-8">
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </p>
+            <div class="flex flex-col gap-1">
+              <p class="font-serif font-black">Thomas S.</p>
+              <p class="text-[0.95rem] text-neutral-300">
+                Chief Operating Officer
+              </p>
+            </div>
+          </article>
+          <article
+            class="w-[87%] mx-auto flex flex-col gap-16 justify-center items-center text-lg"
+          >
+            <img
+              class="w-20 h-20 rounded-full"
+              src="./images/image-jennie.jpg"
+              alt=""
+            />
+            <p class="text-neutral-400 leading-8">
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </p>
+            <div class="flex flex-col gap-1">
+              <p class="font-serif font-black">Jennie F.</p>
+              <p class="text-[0.95rem] text-neutral-300">Business Owner</p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="grid grid-cols-2 lg:grid-cols-4">
+        <div class="col-start-1">
+          <img
+            class="sm:hidden"
+            src="./images/mobile/image-gallery-milkbottles.jpg"
+            alt="milk bottles"
+          />
+          <img
+            class="hidden sm:block"
+            src="./images/desktop/image-gallery-milkbottles.jpg"
+            alt="milk bottles"
+          />
+        </div>
+        <div class="row-start-1 col-start-2">
+          <img
+            class="sm:hidden"
+            src="./images/mobile/image-gallery-orange.jpg"
+            alt="cut orange in a plate"
+          />
+          <img
+            class="hidden sm:block"
+            src="./images/desktop/image-gallery-orange.jpg"
+            alt="cut orange in a plate"
+          />
+        </div>
+        <div class="col-start-1 lg:col-start-3">
+          <img
+            class="sm:hidden"
+            src="./images/mobile/image-gallery-cone.jpg"
+            alt="ice cream cone"
+          />
+          <img
+            class="hidden sm:block"
+            src="./images/desktop/image-gallery-cone.jpg"
+            alt="ice cream cone"
+          />
+        </div>
+        <div class="row-start-2 col-start-2 lg:row-start-1 lg:col-start-4">
+          <img
+            class="sm:hidden"
+            src="./images/mobile/image-gallery-sugar-cubes.jpg"
+            alt="sugar cubes"
+          />
+          <img
+            class="hidden sm:block"
+            src="./images/desktop/image-gallery-sugarcubes.jpg"
+            alt="sugar cubes"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#87C7B9]">
+      <section class="w-[87%] mx-auto py-16 flex flex-col gap-16 lg:gap-20">
+        <div class="flex flex-col gap-10">
+          <a class="mx-auto" href="#"
+            ><img class="w-48" src="./images/logo.svg" alt="logo"
+          /></a>
+          <div
+            class="flex justify-around text-lg text-primary-design-text-cyan lg:justify-center gap-16"
+          >
+            <a
+              class="opacity-60 hover:underline hover:opacity-100 lg:hover:text-neutral-100"
+              href="#"
+              >About</a
+            >
+            <a
+              class="opacity-60 hover:underline hover:opacity-100 lg:hover:text-neutral-100"
+              href="#"
+              >Services</a
+            >
+            <a
+              class="opacity-60 hover:underline hover:opacity-100 lg:hover:text-neutral-100"
+              href="#"
+              >Projects</a
+            >
+          </div>
+        </div>
+        <div class="mx-auto flex gap-7">
+          <a href="#"
+            ><img src="./images/icon-facebook.svg" alt="" area-hidden="true" />
+          </a>
+          <a href="#"
+            ><img src="./images/icon-instagram.svg" alt="" area-hidden="true"
+          /></a>
+          <a href="#"
+            ><img src="./images/icon-twitter.svg" alt="" area-hidden="true" />
+          </a>
+          <a href="#"
+            ><img src="./images/icon-pinterest.svg" alt="" area-hidden="true"
+          /></a>
+
+
+
+
+
+        
+            
+        
+
+
+
+    </body>
+
+
+
+
+    
+</html>
